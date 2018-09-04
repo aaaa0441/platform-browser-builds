@@ -1,5 +1,5 @@
 /**
- * @license Angular v6.1.6+1.sha-beda212
+ * @license Angular v6.1.6+1.sha-beda212.with-local-changes
  * (c) 2010-2018 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -2022,7 +2022,7 @@
         {
             provide: DomRendererFactory2,
             useClass: DomRendererFactory2,
-            deps: [EventManager, DomSharedStylesHost]
+            deps: [EventManager, DomSharedStylesHost, core.APP_ID]
         },
         { provide: core.RendererFactory2, useExisting: DomRendererFactory2 },
         { provide: SharedStylesHost, useExisting: DomSharedStylesHost },
@@ -2548,7 +2548,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var VERSION = new core.Version('6.1.6+1.sha-beda212');
+    var VERSION = new core.Version('6.1.6+1.sha-beda212.with-local-changes');
 
     /**
      * @license
